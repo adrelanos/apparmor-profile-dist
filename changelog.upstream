@@ -1,3 +1,9 @@
+commit 57e2150a1ec908ea966f99ff8526c7ea5d0e26f9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Mar 28 09:38:28 2026 +0000
+
+    bumped changelog version
+
 commit c336fa09694470946c7b2da98ab2faefc9cc9e8c
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Mar 28 05:29:55 2026 -0400
@@ -195,7 +201,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Nov 15 20:34:24 2023 -0500
 
     port to /etc/apparmor.d/abstractions/base.d part 2
-    
+
     https://phabricator.whonix.org/T927
 
 commit 41e1c82ea56b9f3e55f6f325c863bb6fbc92803a
@@ -209,7 +215,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Nov 15 20:30:37 2023 -0500
 
     port to /etc/apparmor.d/abstractions/base.d
-    
+
     https://phabricator.whonix.org/T927
 
 commit 666e2c15bdff6cbd74f7f6ad6b5dea98f0399c65
@@ -223,7 +229,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:28 2023 -0500
 
     change license to AGPL-3+
-    
+
     https://forums.whonix.org/t/license-change-to-agplv3/17455
 
 commit e096769f361a6ea0f29bd3ce6038582461d96fe8
@@ -531,13 +537,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jan 15 01:44:35 2021 -0500
 
     Cannot use: `rPx`
-    
+
     AVC apparmor="DENIED" operation="exec" info="no new privs" error=-1 profile="/usr/lib/systemcheck/census" name="/usr/bin/tor-circuit-established-check"
-    
+
     Might be fixed in later kernel version.
-    
+
     https://bugs.launchpad.net/ubuntu/+source/linux/+bug/1844186
-    
+
     `/usr/bin/tor-circuit-established-check rix,`
 
 commit ae64881b9f6e3b0590dcc0a153dfe4e387f9ca60
@@ -647,7 +653,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 15 05:56:06 2020 -0400
 
     refactoring
-    
+
     https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/388
 
 commit 4863375bed86ab278d13d030012aff313d3a113c
@@ -782,7 +788,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 1 09:29:24 2020 -0500
 
     Revert "Replace Ux rules"
-    
+
     This reverts commit 2070406b60bbbaff52095537a90b385eb0a33a3d.
 
 commit 04d2be17aeef26b0bce0f7c74d76fb9367ce4771
@@ -790,7 +796,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jan 1 09:26:45 2020 -0500
 
     Revert "remove"
-    
+
     This reverts commit a55417e067616f1cb5a1d64725f43c26b1a40de1.
 
 commit c9055150c75316925a8b0e835b8e1884f0c7c215
@@ -807,7 +813,7 @@ Date:   Sun Dec 8 01:23:44 2019 -0500
       /usr/lib/security-misc/permission-lockdown rpx,
       /usr/lib/security-misc/pam_tally2-info rpx,
     since already done in apparmor-profile-everything
-    
+
     https://forums.whonix.org/t/apparmor-for-complete-system-including-init-pid1-systemd-everything-full-system-mac-policy/8339/174
 
 commit 4f7212ccf5c34febee9b18ed94472d51d6ef624d
@@ -821,7 +827,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 28 05:18:46 2019 -0400
 
     Revert "Create usr.lib.security-misc.pam_tally2-info"
-    
+
     This reverts commit e1ae033305c11d08d6e17c50c607adc08c3edac7.
 
 commit ecd3e9651af3371139e94ec08bbb319deaea08a4
@@ -829,7 +835,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 28 05:18:35 2019 -0400
 
     Revert "Create usr.lib.security-misc.permission-lockdown"
-    
+
     This reverts commit baf8ae99af005c6ea1cb09f4508413e3ff85b247.
 
 commit 3db26a8e2451ad071e6e27a1f4ab25d37489d76c
@@ -845,7 +851,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 28 09:14:58 2019 +0000
 
     Merge pull request #3 from madaidan/apparm
-    
+
     Replace Ux rules in base abstraction
 
 commit 2070406b60bbbaff52095537a90b385eb0a33a3d
@@ -902,14 +908,14 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 12 04:00:12 2019 -0400
 
     specify systemd unit ordering
-    
+
     [Unit]
     DefaultDependencies=no
     Before=sysinit.target
     Before=apparmor.service
     After=local-fs.target
     After=systemd-journald-audit.socket
-    
+
     [Install]
     WantedBy=sysinit.target
 
@@ -1022,7 +1028,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Sep 12 07:31:43 2019 +0000
 
     Merge pull request #2 from madaidan/patch-1
-    
+
     Fix AppArmor when not in live mode
 
 commit a8c19b39d97a7fbb7c43f5ab803ae8142421213f
@@ -1066,7 +1072,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Aug 14 11:29:58 2019 +0000
 
     fix, allow running /usr/lib/security-misc/permission-lockdown unconfined
-    
+
     better than allowing all that /usr/lib/security-misc/permission-lockdown does
     globally for all applications
 
@@ -1081,7 +1087,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Aug 14 11:09:28 2019 +0000
 
     fix security-misc apparmor issue
-    
+
     sudo[19806]: pam_exec(sudo:session): execve(/usr/lib/security-misc/permission-lockdown,...) failed: Permission denied
     sudo[18961]: pam_exec(sudo:session): /usr/lib/security-misc/permission-lockdown failed: exit code 13
     kernel: audit: type=1400 audit(1565780860.972:224): apparmor="DENIED" operation="exec" profile="/usr/bin/whonixcheck" name="/usr/lib/security-misc/permission-lockdown" pid=19806 comm="sudo" requested_mask="x" denied_mask="x" fsuid=0 ouid=0
@@ -1115,7 +1121,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jun 20 13:25:53 2019 +0000
 
     make apparmor work also in live mode
-    
+
     https://forums.whonix.org/t/live-mode-breaks-apparmor/7559
 
 commit 7e68a0dcf485ef4e66a3718ceffae0ad58682f53
@@ -1147,13 +1153,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jun 10 17:52:31 2019 +0000
 
     rename back previously file renamed by mistake
-    
+
     caused apparmor error
-    
+
     renamed:    debian/apparmor-profile-anondist.undisplace -> debian/apparmor-profile-anondist.displace
-    
+
     thanks to @TNTBOMBOM for the bug report!
-    
+
     http://forums.whonix.org/t/whonix-virtualbox-15-0-0-0-7-debian-buster-based-testers-wanted/7131/26
 
 commit 083b6c2081501ce772d53d54b82619912315a749
@@ -1191,9 +1197,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jun 1 09:07:49 2019 +0000
 
     Crude workaround for the following issue.
-    
+
     sudo aa-enforce /etc/apparmor.d/usr.bin.ricochet
-    
+
     ERROR: Conflicting profiles for /usr/bin/ricochet defined in two files:
     - /etc/apparmor.d/usr.bin.ricochet
     - /etc/apparmor.d/usr.bin.ricochet.anondist-orig
@@ -1203,9 +1209,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jun 1 08:58:12 2019 +0000
 
     ricochet apparmor profile fixes
-    
+
     thanks to @HulaHoopWhonix for the bug report!
-    
+
     https://forums.whonix.org/t/ricochet-support/7174/34
 
 commit 90932ff35291f608583ee7f70ba7cc208806bf81
@@ -1279,7 +1285,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 14:34:01 2019 +0000
 
     merge /etc/apparmor.d/abstractions/base.anondist from Debian buster
-    
+
     https://phabricator.whonix.org/T606
 
 commit 7a82a4415ef72854611de3afbced8f637eeb54a5
@@ -1323,18 +1329,18 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 1 14:31:49 2019 +0000
 
     add improved legal protections clauses
-    
+
     The license for software created by Whonix is the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version with additional terms applicable per GNU GPL version 3 section 7.
-    
+
     The additional terms are based on the Doom 3 license which is Debian refers to as `GPL-3+-with-id-software-additional-terms`, which is Debian DFSG [1] (The Debian Free Software Guidelines) approved and which is therefore suitable for Debian `main`. Whonix made applied minimal changes to it:
-    
+
     * Rewrite `The Doom 3 BFG Edition GPL Source Code` to the more common `this program` which is used throughout the GPL.
     * Added a "trump clause" [2], in other words, any conflicts or disputes between the additional terms and the GPLv3 shall be resolved in favor of the GPLv3 by adding `Notwithstanding any other provision of this License` (as mentioned in GPL FAQ [3]) at the beginning of the additional terms.
-    
+
     [1] https://www.debian.org/social_contract#guidelines
     [2] https://www.fsf.org/news/canonical-updated-licensing-terms
     [3] https://www.gnu.org/licenses/gpl-faq.html#v3Notwithstanding
-    
+
     For more considerations, see also:
     https://www.whonix.org/wiki/Dev/Licensing
 
@@ -1369,7 +1375,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jul 27 21:31:17 2018 +0800
 
     Merge pull request #1 from Algernon-01/master
-    
+
     Merges apparmor alias for ro-mode-init and grub-live into apparmor-profile-anondist
 
 commit 07d3bd950ce48a963ea4c6aaca56e7fde000a056
@@ -1413,9 +1419,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Jun 22 09:59:50 2018 +0800
 
     apparmor /usr/lib/uwtexec rix
-    
+
     https://github.com/Whonix/uwt/pull/6
-    
+
     https://phabricator.whonix.org/T797
 
 commit 864b4f359acb506f1afc64680fa517ef8fdba025
@@ -1478,7 +1484,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Feb 10 15:47:49 2017 +0000
 
     remove faketime from Build-Depends:
-    
+
     since no longer used for reproducible builds
 
 commit a5f0da09560e833fe4582f756a504a98ed70a429
@@ -1516,13 +1522,13 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 06:40:36 2017 +0000
 
     add missing aliases for
-    
+
     yumdownloader
-    
+
     onionshare
-    
+
     onionshare-gui
-    
+
     ricochet
 
 commit 31f841fc07e9c311a32f5bed4bae83b08db2be12
@@ -1596,7 +1602,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Aug 19 17:33:39 2015 +0000
 
     Revert "fixed obfsproxy AppArmor issue "OSError: [Errno 13] Permission denied: '/rw/usrlocal/lib/python2.7/dist-packages'" - https://phabricator.whonix.org/T396"
-    
+
     This reverts commit d8a5faec3a71a52b5dab79e092dcbaeeb99c6f7d.
 
 commit d8a5faec3a71a52b5dab79e092dcbaeeb99c6f7d
@@ -1800,7 +1806,7 @@ Author: troubadoour <trobador@riseup.net>
 Date:   Fri Oct 10 18:49:40 2014 +0000
 
     Revert "Added consoles.anondist"
-    
+
     This reverts commit 7aa12d2c7c1c7bde72b2ed579e92f991474545e5.
 
 commit 8cf8a0a9919db547aeef1c38dede02e886cb292a
@@ -1905,7 +1911,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 14 13:08:50 2014 +0000
 
     Revert "-dh-apparmor"
-    
+
     This reverts commit 39834997b993ea51f2448aa42afe57b95148a254.
 
 commit e43179ece30d8aafe6128b77f5815b044259c1c0
@@ -2093,13 +2099,13 @@ Author: troubadoour <trobador@riseup.net>
 Date:   Thu May 8 20:09:46 2014 +0000
 
     Squashed commit of the following:
-    
+
     commit 1e52c01ff41e353dc66e3d969ec818b7eecaaee0
     Author: troubadoour <trobador@riseup.net>
     Date:   Thu May 8 20:07:59 2014 +0000
-    
+
         etc/apparmor.d/abstractions/base.anondist
-    
+
     etc/apparmor.d/abstractions/base.anondist
 
 commit 9f8095dcda7c1b340b3c89e03fbce3147ef66658
