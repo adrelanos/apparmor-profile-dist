@@ -1,3 +1,30 @@
+commit 92c10021cb390e78d79163a991c0718b5dcddf0d
+Merge: f9f83bc 6b15036
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Aug 22 22:37:43 2026 -0400
+
+    Merge remote-tracking branch 'refs/remotes/org-ai-assisted/ai'
+
+commit f9f83bc13e4c39d8182330210c62238582663e47
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Aug 21 08:50:54 2026 +0000
+
+    bumped changelog version
+
+commit 6b15036dcfcb61190c02a2a5f8f316a8bce1cb95
+Author: claude (dev272 e8b76afb-795c-4739-8ebd-023de854021e) <noreply@anthropic.com>
+Date:   Fri Aug 21 04:23:30 2026 -0400
+
+    apparmor-profile-dist: source live-mode.sh via HELPER_SCRIPTS_PATH, drop SC1091 disable
+
+    - live-mode-apparmor: use source "${HELPER_SCRIPTS_PATH:-}"/usr/libexec/helper-scripts/live-mode.sh;
+      drop the dead '# shellcheck disable=SC1091' and the stale sibling note.
+    - .github/dm-consumer.yml: dist-ai-tests: helper-scripts: true, so the
+      pre-push-static gate checks out helper-scripts as the repo sibling and
+      shellcheck FOLLOWS the source. See the shellcheck skill.
+
+    Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>
+
 commit d820a4b02e4dad862f97f1adb8f556fef5c5f37c
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Aug 19 00:07:06 2026 -0400
